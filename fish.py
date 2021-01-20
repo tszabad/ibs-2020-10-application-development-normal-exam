@@ -18,12 +18,12 @@ class Clownfish(Fish):
 
 
 class Tang(Fish):
-    def __init__(self,name, weight, color, short_memory = True):
+    def __init__(self, name, weight, color, short_memory = True):
         super().__init__(name, weight, color)
         self.short_memory = short_memory
 
     def status(self):
-            print(f"{self.__class__.__name__} type of fish, {self.name}, weight: {self.weight}, color: {self.color}, short-term memory loss: {self.short_memory.lower()}")
+            print(f"{self.__class__.__name__} type of fish, {self.name}, weight: {self.weight}, color: {self.color}, short-term memory loss: {str(self.short_memory).lower()}")
 
     def feed(self):
         self.weight += 1
