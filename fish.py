@@ -5,6 +5,9 @@ class Fish(ABC):
         self.weight = weight
         self.color = color
 
+    def get_weight(self):
+        return self.weight
+
     @abstractmethod
     def status(self):
         pass

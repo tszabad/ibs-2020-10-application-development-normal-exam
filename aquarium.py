@@ -13,7 +13,7 @@ class Aquarium():
     
     def remove_fish(self):
         for i in self.fishes:
-            if i.weight >= 11:
+            if i.get_weight() >= 11:
                 self.fishes.remove(i)
 
     def get_status(self):
