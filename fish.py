@@ -1,10 +1,17 @@
-class Fish():
+from abc import ABC, abstractmethod 
+class Fish(ABC):
     def __init__(self,name, weight, color):
         self.name = name
         self.weight = weight
         self.color = color
 
+    @abstractmethod
+    def status(self):
+        pass
 
+    @abstractmethod
+    def feed(self):
+        pass
 class Clownfish(Fish):
     def __init__(self,name, weight, color, second_color):
         super().__init__(name, weight, color)
